@@ -1,0 +1,119 @@
+:root {
+  --color1: #6aaadf;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 10pt;
+  font-weight: 350;
+  line-height: 1.75;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 30pt;
+}
+
+#title-year {
+  display: inline-block;
+  width: 100;
+  font-size: 60pt;
+  font-weight: 900;
+  color: var(--color1);
+}
+
+#title-text {
+  width: 1px;
+  display: inline-block;
+  line-height: 80%;
+}
+
+.logo {
+  width: 30%;
+}
+
+#preparedfor {
+  font-size: 0.8rem;
+}
+
+.heading {
+  font-weight: bold;
+  background-color: var(--color1) !important;
+  color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 7px;
+}
+
+table, .table {
+  border-collapse: collapse;
+  margin-top: 50px;
+  width: 100%;
+}
+
+tr.border_bottom td {
+  border-bottom: 0.5px solid #6aaadf;
+}
+
+td {
+  /*padding: 3px;*/
+}
+
+.colum-title {
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  padding-left: 16px;
+  padding-bottom: 10px;
+}
+
+li::before {
+  content: "◼";
+  padding-right: 8px;
+  color: var(--color1);
+}
+
+.paragraph {
+  margin-top: 10px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.img-container {
+  width: 200%;
+}
+
+img {
+  width: 100%;
+}
+
+@page {
+  @bottom-right: {
+    content: "page " counter(page) " of " counter(pages);
+    font-family: 'Lato', sans-serif;
+    font-size: 0.75rem;
+  }
+}
